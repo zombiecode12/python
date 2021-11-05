@@ -1,9 +1,18 @@
-def add_two_num(a,b):
-    global result
-    print(":)")
-    result = a+b
-    return result
+def inp():
+    global a,b
+    a = int(input("숫자를 입력하세요 :"))
+    b = int(input("숫자를 입력하세요 :"))
 
-result = 0
-add_two_num(10,13)
-print(result)
+def sort():
+    global x,y
+    x = max(a, b)
+    y = min(a, b)
+
+def gugu():
+    for i in range(y,x+1):
+        for j in range(1,10):
+            print("%d x %d = %d"%(i,j,i*j))
+
+inp()
+sort()
+gugu()
